@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EV and Company offers expert accounting and auditing services tailored for businesses across Malaysia.">
   <title>EV and Co</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,9 +18,9 @@
     <div class="brand">EV and Company</div>
     <div style="flex-grow: 1; display: flex; align-items: center; justify-content: center;"></div>
     <nav>
-        <a href="#home" style="margin-right: 15px;">Home</a>
-        <a href="#services" style="margin-right: 15px;">Services</a>
-        <a href="#contact" style="margin-right: 15px;">Contact Us</a>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 </div>
 
@@ -24,21 +30,18 @@
       <p>Elevating business with expert consulting</p>
       <a href="#contact" class="button">Contact us</a>
     </div>
-  </div>
-
+</div>
 
 <div id="services" class="section section2">
-
   <div class="services-container">
     <div class="services-left">
       <h2>Consulting Services</h2>
-      <h4>What We Offer</h4>
+      <h3>What We Offer</h3>
       <p>
         We are a leading professional accounting firm dedicated to delivering value that supports our 
         clients and is well-positioned to sustain growth amid evolving national regulations and the global landscape.
       </p>
     </div>
-
     <div class="services-right">
       <div class="service-item">External audit with internal controls assessments, including several large groups of companies</div>
       <div class="service-item">Internal audit experience with several organisations, including a port</div>
@@ -64,15 +67,13 @@
     <div class="contact-form">
       <h2>Send Us a Message</h2>
       <form target="_blank" action="https://formsubmit.co/734df38cb997b7d463768e163d2e20a8" method="POST">
-        <!--honeypot-->
         <input type="text" name="_honey" style="display:none;">
-        <!--disable captcha-->
         <input type="hidden" name="_next" value="https://hakimilolw.github.io/TestWEb/">
-
         <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-        <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
+
+        <input type="text" name="name" class="form-control" placeholder="Your Name" aria-label="Your Name" required>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" aria-label="Your Email" required>
+        <textarea name="message" rows="5" class="form-control" placeholder="Your Message" aria-label="Your Message" required></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
@@ -86,9 +87,8 @@
   </section>
 </div>
 
-
 <div class="footer">
-    &copy; 2025 EV and Co. All rights reserved.
+  &copy; 2025 EV and Company. All rights reserved.
 </div>
 
 </body>
