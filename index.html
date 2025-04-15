@@ -9,26 +9,25 @@
 <body>
 
 <div class="header">
-    <div class="brand">EV and Company</div>
-    <div style="flex-grow: 1; display: flex; align-items: center; justify-content: center;"></div>
-    <nav>
-        <a href="#home" style="margin-right: 15px;">Home</a>
-        <a href="#services" style="margin-right: 15px;">Services</a>
-        <a href="#contact" style="margin-right: 15px;">Contact Us</a>
-    </nav>
+  <div class="brand">EV and Company</div>
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
 </div>
 
 <div id="home" class="section section1">
-    <div class="section1-content">
-      <h1>Expert Accounting Services</h1>
-      <p>Elevating business with expert consulting</p>
-      <a href="#contact" class="button">Contact us</a>
-    </div>
+  <div class="section1-content">
+    <h1>Expert Accounting Services</h1>
+    <p>Elevating business with expert consulting</p>
+    <a href="#contact" class="button">Contact us</a>
   </div>
-
+</div>
 
 <div id="services" class="section section2">
-
   <div class="services-container">
     <div class="services-left">
       <h2>Consulting Services</h2>
@@ -38,7 +37,6 @@
         clients and is well-positioned to sustain growth amid evolving national regulations and the global landscape.
       </p>
     </div>
-
     <div class="services-right">
       <div class="service-item">External audit with internal controls assessments, including several large groups of companies</div>
       <div class="service-item">Internal audit experience with several organisations, including a port</div>
@@ -64,11 +62,8 @@
     <div class="contact-form">
       <h2>Send Us a Message</h2>
       <form target="_blank" action="https://formsubmit.co/734df38cb997b7d463768e163d2e20a8" method="POST">
-        <!--honeypot-->
         <input type="text" name="_honey" style="display:none;">
-        <!--disable captcha-->
         <input type="hidden" name="_next" value="https://hakimilolw.github.io/TestWEb/">
-
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
         <input type="email" name="email" class="form-control" placeholder="Your Email" required>
@@ -86,9 +81,8 @@
   </section>
 </div>
 
-
 <div class="footer">
-    &copy; 2025 EV and Co. All rights reserved.
+  &copy; 2025 EV and Co. All rights reserved.
 </div>
 
 </body>
