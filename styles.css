@@ -124,9 +124,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  height: 100vh;
   justify-content: center;
   padding: 60px 20px;
-  height: 100vh;
 }
 
 .services-container {
@@ -178,10 +178,10 @@ body {
   background-color: #f9fcfa;
   padding: 60px 20px;
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100vh;
 }
 
 .contact-container {
@@ -309,5 +309,41 @@ body {
 
   .contact-form {
     padding-left: 0;
+  }
+}
+
+/* === Smooth Animations === */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section1-content a.button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.section1-content a.button:hover {
+  transform: translateY(-3px);
+}
+
+.header {
+  animation: slideDown 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
